@@ -1,0 +1,129 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    height: 30px;
+    background: linear-gradient(135deg, #2D132C, #801336); 
+    background-size: 200% 200%;
+    animation: fadeBackground 3s infinite alternate;
+    transition: background 0.5s ease-in-out;
+    overflow: visible;
+  }
+
+  .input-container {
+    margin-top: 100px; /* Add space below the navbar */
+}
+
+input {
+    display: block;
+    width: 100%; /* Ensure the input is taking full width */
+    padding: px;
+}
+
+  @keyframes fadeBackground {
+    0% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .navbar i{
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .navbar i:hover {
+    color: #EE4540;
+  }
+  
+
+  .hamburger-icon i{
+    line-height: 1;
+    margin-left: 200px;
+    font-size: 50px;
+    border-radius: 50%;
+    color:white;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .hamburger-icon:hover i {
+  background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .sidebar {
+    position:fixed;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    top: 80px;
+    left: 0;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    background: linear-gradient(135deg, #2D132C, #801336); 
+    background-size: 200% 200%;
+    animation: fadeBackground 3s infinite alternate;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    overflow: visible;
+  }
+
+  .sidebar.show{
+    opacity:0.7;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s 0s;
+  }
+
+ li{
+  width: 100%;
+  font-size: 24px;
+  cursor: pointer;
+  list-style-type: none;  /* Removes the bullet points */
+  padding:30px;
+  align-items: center;
+  justify-content: center;
+ }
+
+ ul li{
+  color: white;
+ }
+
+ li a {
+  color:white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-family:'Times New Roman', Times, serif;
+ }
+ 
+ .sidebar ul li:last-child {
+  position: absolute;
+  bottom: 10%;
+
+
+}
+
+.navbar-right{
+  position: absolute;
+  right: 30px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}

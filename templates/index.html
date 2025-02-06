@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block head %} {% endblock %}
+
+{% block body %}
+<nav class="navbar">
+      <div class='hamburger-icon' onclick='toggleSidebar();'>
+        <ul>
+        <i class="material-icons">menu</i> 
+        </ul>
+      </div>
+      <ul>
+        <li><a class = 'navbar-right' href = 'Login'><i class="fa fa-sign-in-alt">Login</i></a></li>
+      </ul>
+      
+</nav>
+<nav class="sidebar" id="sideBar">
+  <ul>
+      <li><a href = '#'> Rent</a></li>
+      <li><a  href = '#'> Success Stories</a></li>
+      <li><a  href = '#' > Contact Us</a></li>
+  </ul>
+</nav>
+  
+  
+{% endblock %}
